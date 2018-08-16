@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
   </head>
-  <body>
+  <body bgcolor="lightgrey">
 
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a>
-				<img src="img/logo.svg" width="350" height="150" alt="Логотип магазина мороженого «GllacyShop»">
+				<img src="img/gllacy-logo.svg" width="154" height="64" alt="Логотип магазина мороженого «GllacyShop»">
 			</a>
 			
 			<ul class="site-navigation">
@@ -73,7 +73,7 @@
 
 			<div class="popular-item">
 				<span class="popular-label">хит</span>
-				<img src="img/creamy-orange.jpg" width="350" height="150" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+				<img src="img/creamy-orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 				<span class="price">310 &#8381;</span>
 				<span class="kg">/кг</span>
 				<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
@@ -81,7 +81,7 @@
 
 			<div class="popular-item">
 				<span class="popular-label">хит</span>
-				<img src="img/creamy-coffee.jpg" width="350" height="150" alt="Сливочно-кофейное с кусочками шоколада">
+				<img src="img/creamy-coffee.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
 				<span class="price">380 &#8381;</span>
 				<span class="kg">/кг</span>
 				<p>Сливочно-кофейное с кусочками шоколада</p>
@@ -89,7 +89,7 @@
 
 			<div class="popular-item">
 				<span class="popular-label">хит</span>
-				<img src="img/creamy-strawberry.jpg" width="350" height="150" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+				<img src="img/creamy-strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 				<span class="price">355 &#8381;</span>
 				<span class="kg">/кг</span>
 				<p>Сливочно-клубничное с присыпкой из белого шоколада</p>
@@ -97,7 +97,7 @@
 
 			<div class="popular-item">
 				<span class="popular-label">хит</span>
-				<img src="img/сreme-brulee.jpg" width="350" height="150" alt="Сливочное крем-брюле с карамельной подливкой">
+				<img src="img/сreme-brulee.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
 				<span class="price">415 &#8381;</span>
 				<span class="kg">/кг</span>
 				<p>Сливочное крем-брюле с карамельной подливкой</p>
@@ -135,6 +135,8 @@
 			<h2 class="visually-hidden">Контактная информация</h2>
 			<!-- map -->
 
+			<img src="img/map.png" width="1250" height="430" alt="Как до нас добраться">
+
 			<p>
 				Адрес главного магазина и офлайн-магазина:
 				<span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
@@ -153,11 +155,11 @@
 	<footer>
 
 		<div class="footer-social">
-        	<ul>
-          		<li><a class="social-button" href="#">Твиттер</a></li>
-          		<li><a class="social-button" href="#">Инстаграм</a></li>
-          		<li><a class="social-button" href="#">Фейсбук</a></li>
-          		<li><a class="social-button" href="#">Вконтакте</a></li>
+        	<ul >
+          		<li><a class="social-button" href="#"><img src="img/twitter.svg" width="32" height="32" alt="Твиттер"></a></li>
+          		<li><a class="social-button" href="#"><img src="img/instagram.svg" width="32" height="32" alt="Инстаграм"></a></a></li>
+          		<li><a class="social-button" href="#"><img src="img/fb.svg" width="32" height="32" alt="Фейсбук"></a></a></li>
+          		<li><a class="social-button" href="#"><img src="img/vk.svg" width="32" height="32" alt="Вконтакте"></a></a></li>
         	</ul>
       	</div>
 		
@@ -171,11 +173,23 @@
 		</div>
 
 		<p class="footer-copyright">
-        	<img src="img/html.jpg" width="150" height="50" alt="Логотип HTML Academy"><br>
+        	<img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy"><br>
         	Сделано в <a class="button" href="https://htmlacademy.ru">HTML Academy</a> &#169; 2017
       	</p>
 		
 	</footer>
+
+	<section class="popup-menu">
+		<h2 class="visually-hidden">Подменю "Каталог"</h2>
+		<ul>
+			<li><a href="#"><b>Новинки</b></a></li>
+			<li><a href="#">Сливочное</a></li>
+			<li><a href="#">Щербеты</a></li>
+			<li><a href="#">Фруктовый лед</a></li>
+			<li><a href="#">Мелорин</a></li>
+		</ul>
+		
+	</section>
 
 	<section class="modal modal-search">
       <h2 class="visually-hidden">Поиск</h2>
@@ -192,6 +206,12 @@
     <section class="modal modal-basket">
     	<h2 class="visually-hidden">Корзина</h2>
     	<!-- Здесь будет корзина -->    	
+    </section>
+
+    <section class="modal modal-feedback">
+    	<h2 class="visually-hidden">Обратная связь</h2>
+    	<p>Мы вам обязательно ответим!</p>
+    	<!-- Здесь будет форма обратной связи -->    	
     </section>
 
   </body>
