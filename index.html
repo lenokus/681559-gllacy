@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+	<meta charset="utf-8">
+	<title>HTML Academy: Глейси</title>
 </head>
 <body>
-
+	
 	<header class="main-header">
 		<nav class="main-navigation">
 			
@@ -18,30 +18,32 @@
 				<li><a href="delivery.html">Доставка и оплата</a></li>
 				<li><a href="about-us.html">О компании</a></li>
 			</ul>
+		</nav>
 			
-			<ul class="user-navigation">
-				<li class="search"><a href="search.html">Поиск</a></li>
-				<li class="login"><a href="login.html">Вход</a></li>
-				<li class="basket"><a href="bascket.html">Пусто</a></li>
-			</ul>
+		<ul class="user-navigation">
+			<li class="search"><a href="search.html">Поиск</a></li>
+			<li class="login"><a href="login.html">Вход</a></li>
+			<li class="basket"><a href="bascket.html">Пусто</a></li>
+		</ul>
 			
-			<p>
-				С 10 до 20, ежедневно
-				<span>8 812 450-25-25</span>
-			</p>
-			
-		</nav>		
+		<p>
+			С 10 до 20, ежедневно
+			<span>8 812 450-25-25</span>
+		</p>		
 	</header>
 	
-
+	
 	<main class="container">
 		
 		<h1 class="visually-hidden">Магазин мороженого «GllacyShop»</h1>
-
-
+		
+		
 		<section class="slider">
 			<a class="slider-text" href="#">Крем-брюле и пломбир с малиновым джемом</a>
-      		
+			<a class="slider-text" href="#">Шоколадный пломбир и лимонный сорбет</a>
+			<a class="slider-text" href="#">Пломбир с помадкой и клубничный щербет</a>
+
+			
 			<div class="slider-pagination">
 				<ul>
 					<li><a class="pagination-item pagination-item-active" href="#"></a></li>
@@ -69,8 +71,8 @@
 				<a class="button" href="#">Хочу шоколадки!</a>
 			</div>
 		</section>
-			
-
+		
+		
 		<section class="popular">
 			<h2 class="visually-hidden">Популярные товары</h2>
 
@@ -135,10 +137,10 @@
 			
 			<form class="email-subscription-form" action="https://echo.htmlacademy.ru" method="post">
 				<p>
-          			<label class="visually-hidden" for="email-subscribtion">Адрес электронной почты</label>
-          			<input class="" id="email-subscription" type="text" name="email-subscription" placeholder="Электронная почта">
-          			<button class="button" type="submit">Отправить</button>
-          		</p>			
+					<label class="visually-hidden" for="email-subscription">Адрес электронной почты</label>
+					<input class="" id="email-subscription" type="text" name="email-subscription" placeholder="Электронная почта">
+					<button class="button" type="submit">Отправить</button>
+				</p>
 			</form>
 		</section>
 
@@ -149,19 +151,20 @@
 			<!-- map -->
 
 			<img src="img/map.png" width="1250" height="430" alt="Адрес магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
-
-			<p>
-				Адрес главного магазина и офлайн-магазина:
-				<span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-			</p>
-			<p>
-				Для заказов по телефону:
-				<span>8 812 450-25-25</span>
-				(с 10 до 20 ежедневно)
-			</p>
 			
-			<a class="button" href="feedback.html">Форма обратной связи</a>
-		</section>		
+			<div class="contacts-block">
+				<p>
+					Адрес главного магазина и офлайн-магазина:
+					<span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+				</p>
+				<p>
+					Для заказов по телефону:
+					<span>8 812 450-25-25</span>
+					(с 10 до 20 ежедневно)
+				</p>
+				<a class="button" href="feedback.html">Форма обратной связи</a>
+			</div>
+		</section>
 	
 	</main>
 
@@ -169,13 +172,13 @@
 	<footer>
 
 		<div class="footer-social">
-        	<ul >
-          		<li><a class="social-button" href="#">Твиттер</a></li>
-          		<li><a class="social-button" href="#">Инстаграм</a></li>
-          		<li><a class="social-button" href="#">Фейсбук</a></li>
-          		<li><a class="social-button" href="#">Вконтакте</a></li>
-        	</ul>
-      	</div>
+			<ul >
+				<li><a class="social-button" href="#">Твиттер</a></li>
+				<li><a class="social-button" href="#">Инстаграм</a></li>
+				<li><a class="social-button" href="#">Фейсбук</a></li>
+				<li><a class="social-button" href="#">Вконтакте</a></li>
+			</ul>
+		</div>
 		
 		<div class="footer-menu">
 			<ul>
@@ -187,9 +190,9 @@
 		</div>
 
 		<p class="footer-copyright">
-        	<img src="img/htmlacademy-logo.svg" width="108" height="39" alt="Логотип HTML Academy"><br>
-        	Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &#169; 2017
-      	</p>
+			<img src="img/htmlacademy-logo.svg" width="108" height="39" alt="Логотип HTML Academy"><br>
+			Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2017
+		</p>
 		
 	</footer>
 
@@ -206,62 +209,64 @@
 	</section>
 
 	<section class="modal modal-search">
-    	<h2 class="visually-hidden">Поиск</h2>
-    	
-    	<form class="search-form" method="post" action="https://echo.htmlacademy.ru">
-    		<p>
-    			<label class="visually-hidden" for="search">Поле поиска</label>
-                <input id="search" type="search" name="search" placeholder="Что ищем?">
-    		</p>
-    </section>
+		<h2 class="visually-hidden">Поиск</h2>
+		
+		<form class="search-form" method="post" action="https://echo.htmlacademy.ru">
+			<p>
+				<label class="visually-hidden" for="search">Поле поиска</label>
+				<input id="search" type="search" name="search" placeholder="Что ищем?">
+			</p>
+		</form>
+	</section>
 
 	<section class="modal modal-login">
-    	<h2 class="visually-hidden">Личный кабинет</h2>
-      	<form class="login-form" method="post" action="https://echo.htmlacademy.ru">
+		<h2 class="visually-hidden">Личный кабинет</h2>
+		<form class="login-form" method="post" action="https://echo.htmlacademy.ru">
 			<p>
-          		<label class="visually-hidden" for="email-login">Электронная почта</label>
-          		<input id="email-login" type="text" name="login" placeholder="Электронная почта">
-        	</p>
+				<label class="visually-hidden" for="email-login">Электронная почта</label>
+				<input id="email-login" type="text" name="login" placeholder="Электронная почта">
+			</p>
 			<p>
-          		<label class="visually-hidden" for="user-password">Пароль</label>
-          		<input id="user-password" type="password" name="password" placeholder="Пароль">
-        	</p>
-        	<button class="button" type="submit">Войти</button>      	
-      	</form>
+				<label class="visually-hidden" for="user-password">Пароль</label>
+				<input id="user-password" type="password" name="password" placeholder="Пароль">
+			</p>
+			<button class="button" type="submit">Войти</button>
+		</form>
 		<a href="#">Забыли пароль?</a>
-      	<a href="#">Новая регистрация</a>
-    </section>
+		<a href="#">Новая регистрация</a>
+	</section>
 
-    <section class="modal modal-basket">
-    	<h2 class="visually-hidden">Корзина</h2>
-    	<!-- Здесь будет корзина -->    	
-    </section>
+	<section class="modal modal-basket">
+		<h2 class="visually-hidden">Корзина</h2>
+		<!-- Здесь будет корзина -->
+	</section>
 
-    <section class="modal modal-feedback">
-    	<h2 class="visually-hidden">Обратная связь</h2>
-    	<p>Мы вам обязательно ответим!</p>
-    	
+	<section class="modal modal-feedback">
+		<h2 class="visually-hidden">Обратная связь</h2>
+		<p>Мы вам обязательно ответим!</p>
+		<button class="modal-close" type="button">Закрыть окно</button>
+		
 		<form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
 
 			<p>
-            	<label class="visually-hidden" for="user-name">Ваше имя</label>
-            	<input id="user-name" type="text" name="name" placeholder="Как вас зовут?">
-          	</p>
-          	
-          	<p>
-        		<label class="visually-hidden" for="email-feedback">Электронная почта</label>
-            	<input id="email-feedback" type="text" name="email-feedback" placeholder="Ваша электронная почта для ответа?">
-          	</p>
+				<label class="visually-hidden" for="user-name">Ваше имя</label>
+				<input id="user-name" type="text" name="name" placeholder="Как вас зовут?">
+			</p>
+			
+			<p>
+				<label class="visually-hidden" for="email-feedback">Электронная почта</label>
+				<input id="email-feedback" type="text" name="email-feedback" placeholder="Ваша электронная почта для ответа?">
+			</p>
 
-          	<p>
-            	<label class="visually-hidden" for="comment">Текст сообщения</label>
-            	<textarea id="comment" name="comment" rows="10">Напишите что-нибудь...</textarea>
-          	</p>
-        	
-        	<button class="button" type="submit">Отправить</button>
+			<p>
+				<label class="visually-hidden" for="comment">Текст сообщения</label>
+				<textarea id="comment" name="comment" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+			</p>
+			
+			<button class="button" type="submit">Отправить</button>
 		</form>
 
-    </section>
+	</section>
 
 </body>
 </html>
