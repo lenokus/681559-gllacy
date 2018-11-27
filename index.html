@@ -7,32 +7,28 @@
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
+
 <body class="main-page">
+
 	
-	<header class="main-header">
+	<header class="main-header container">
 		<nav class="main-navigation">
-			
-			<a class="logo">
-				<img src="img/gllacy-logo.svg" width="154" height="64" alt="Логотип магазина мороженого «GllacyShop»">
+			<a>
+				<img class="logo" src="img/gllacy-logo.svg" width="154" height="64" alt="Логотип магазина мороженого «GllacyShop»">
 			</a>
-			
+		
 			<ul class="site-navigation">
-				<li><a href="catalog.html">Каталог</a></li>
-				<li><a href="delivery.html">Доставка и оплата</a></li>
-				<li><a href="about-us.html">О компании</a></li>
+				<li><a href="catalog.html"><span>Каталог</span></a></li>
+				<li><a href="delivery.html"><span>Доставка и оплата</span></a></li>
+				<li><a href="about-us.html"><span>О компании</span></a></li>
+			</ul>
+
+			<ul class="user-navigation">
+				<li class="search"><a href="search.html">Поиск</a></li>
+				<li class="login"><a href="login.html">Вход</a></li>
+				<li class="basket-empty"><a href="bascket.html">Пусто</a></li>
 			</ul>
 		</nav>
-			
-		<ul class="user-navigation">
-			<li class="search"><a href="search.html">Поиск</a></li>
-			<li class="login"><a href="login.html">Вход</a></li>
-			<li class="basket-empty"><a href="bascket.html">Пусто</a></li>
-		</ul>
-			
-		<p class="delivery-condition">
-			С 10 до 20, ежедневно<br>
-			<span class="phone">8 812 450-25-25</span>
-		</p>		
 	</header>
 	
 	
@@ -40,19 +36,23 @@
 		
 		<h1 class="visually-hidden">Магазин мороженого «GllacyShop»</h1>
 		
+		<section class="delivery-condition">
+			<p>С 10 до 20, ежедневно</p>
+			<p class="phone">8 812 450-25-25</p>			
+		</section>
 		
 		<section class="slider">
 			<div class="slider-text">
-				<a href="#">Крем-брюле и пломбир с малиновым джемом</a>
-				<a class="visually-hidden" href="#">Шоколадный пломбир и лимонный сорбет</a>
-				<a class="visually-hidden" href="#">Пломбир с помадкой и клубничный щербет</a>
+				<p>Крем-брюле и пломбир с малиновым джемом</p>
+				<p class="visually-hidden">Шоколадный пломбир и лимонный сорбет</p>
+				<p class="visually-hidden">Пломбир с помадкой и клубничный щербет</p>
 			</div>
-						
+
 			<ul class="slider-pagination">
 				<li><button class="pagination-item pagination-item-active" type="button">Первый слайд</li>
 				<li><button class="pagination-item" type="button">Второй слайд</li>
 				<li><button class="pagination-item" type="button">Третий слайд</li>
-			</ul>
+			</ul>			
 
 			<a class="slider-button" href="#">Давайте оба!</a>
 		</section>

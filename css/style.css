@@ -1,46 +1,57 @@
-/* 
-Позиционирование
-Блочная модель
-Типографика
-Оформление
-Анимация
-Разное
-*/
-
-
 body {
+	min-width: 1200px;
 	margin: 0;
 	padding: 0;
 
 	font-family: "Roboto", Arial, sans-serif;
-	font-size: 16px;
-	line-height: normal;
 	font-weight: 400;
+	font-size: 16px;
+	line-height: normal;	
 	color: #ffffff;
   
+	/* 
+
+	-------- Убран фон --------------
 	background-color: #849d8f;  
 	background-position: top center;
 	background-repeat: no-repeat;
-}
 
-.main-page {
-	background-color: #849d8f;
-	background-image: url("../img/slider-1.png");
+	*/
+
+	background-image: url("../img/gllacy-index-1200.png");
 	background-position: top center;
+	background-repeat: no-repeat;
 }
 
 a {
 	text-decoration: none;
 }
 
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+
+.container {
+	width: 1146px;
+	margin: 0 auto;
+	padding: 0;
+}
+
 .button {
 	font: inherit;
-	font-size: 18px;
-	line-height: 24px;
 	font-weight: 700;
+	font-size: 18px;	
+	line-height: 24px;	
 	color: #ffffff;
+
 	text-align: center;
 	vertical-align: center;
+
 	text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 
 	background-color: #f16542;
@@ -63,50 +74,95 @@ a {
 	box-shadow: inset 0px 2px 2px 0px #942718;
 }
 
+/* Header */
+
+.main-page {
+	/*
+
+	background-color: #849d8f;
+	background-image: url("../img/slider-1.png");
+	background-position: top center;
+
+	*/
+}
+
+/* ---------  Главное меню --------- */
+
+.main-header {
+	
+}
+
+.main-navigation {
+	display: flex;
+	width: 1146px;	
+	margin-top: 10px;	
+}
+
+.logo {
+	margin-right: 9px;
+}
 
 .site-navigation {
-	line-height: 18px;
+	align-content: center;
+	width: 378px;
+
 	font-weight: 700;
+	line-height: 18px;	
 	color: #ffffff;
 }
 
-.site-navigation a {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
+.user-navigation {	
+	width: 245px;
+	margin-left: auto;
+	margin-top: 20px; 
 
-.user-navigation {
+	font-weight: 500;
 	font-size: 14px;
 	line-height: 16px;
-	font-weight: 500;
 	color: #ffffff;
 }
-
 
 .site-navigation,
 .user-navigation {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;	
+	padding: 0;
+
 	list-style: none;
+}
+
+.site-navigation li > a,
+.user-navigation li > a {
+	padding: 7px 14px;
+}
+
+.site-navigation span {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);	
+}
+
+.user-navigation a {
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
 }
 
 .site-navigation a,
 .user-navigation a {
+	padding: 7px 14px;
 	color: #ffffff;
-}
-
-.user-navigation a {	
-	background-color: rgba(255, 255, 255, 0.2);
-	border-radius: 20px;
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:hover,
-.user-navigation a:focus {
+.user-navigation a:focus {	
 	color: #333333;
 	background-color: #ededed;
 	border-radius: 20px;
 }
 
-.site-navigation a:active {
+.site-navigation a:active,
+.user-navigation a:active {	
 	color: #333333;
 	background-color: #ededed;
 	box-shadow: inset 0px 2px 1px 0px #696969;
@@ -115,20 +171,38 @@ a {
 /* нажатое состояние в навигации */
 
 .basket-filled a {
+	font-weight: 500;
 	font-size: 14px;
 	line-height: 16px;
-	font-weight: 500;
 	color: #323232;
 
 	background-color: #f7f6f3;
 }
 
-.delivery-condition {
+/* ---------  Хлебные крошки и конткты --------- */
+
+.breadcrumbs {
+	list-style: none;
+
 	font-size: 14px;
 	line-height: 16px;
+	font-weight: 400;
+}
+
+.delivery-condition {
+	margin: 0;
+	padding: 0;
 	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	
 	color: #ffffff;
 	text-align: right;
+}
+
+.delivery-condition p {
+	margin: 0;
+	padding: 0;
 }
 
 .phone {
@@ -136,22 +210,65 @@ a {
 	line-height: 24px;
 }
 
+/* ---------  Слайдер на главной --------- */
+
 .slider {
+	height: 490px;
+	width: 1149px;
 	text-align: center;
+
 }
 
-.slider-text a {
+.slider-text {	
+
+}
+
+.slider-text p {
+	width: 700px;
+	margin: 0 auto;
+	padding-top: 272px;
+	
+	font-weight: 700;	
 	font-size: 60px;
 	line-height: 60.35px;
-	font-weight: 700;
+	
 	color: #ffffff;	
 }
 
 .slider-pagination {
+	position: absolute;
+	top: 539px;
+	left: 106px;
+	display: flex;
+	justify-content: space-between;
+	width: 80px;
+	height: 25px;
+
 	list-style: none;
 }
 
+.pagination-item {
+	width: 20px;
+	height: 20px;
+
+	font-size: 0;
+
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+
+	cursor: pointer;
+   
+}
+
+.pagination-item-active {
+	background-color: #ffffff;
+}
+
+
+
 .slider-button {
+	padding: 15px 40px;
 	font-size: 32px;
 	line-height: 44px;
 	font-weight: 700;
@@ -162,7 +279,7 @@ a {
 	background-color: #f16542;
 	background-image: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
 	border-style: none;
-	border-radius: 30px;
+	border-radius: 40px;
 	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
@@ -177,6 +294,13 @@ a {
 	background-color: #d94d35;
 	background-image: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
 	box-shadow: inset 0px 2px 2px 0px #942718;
+}
+
+/* ---------  Промо на главной --------- */
+
+.promo {
+	display: flex;
+	justify-content: space-around;
 }
 
 .promo h3 {
@@ -213,13 +337,7 @@ a {
 	border-radius: 15px;
 }
 
-.breadcrumbs {
-	list-style: none;
 
-	font-size: 14px;
-	line-height: 16px;
-	font-weight: 400;
-}
 
 .filter select {
 
@@ -348,6 +466,7 @@ a {
 }
 
 .pagination-list a {
+	display: block;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
@@ -369,6 +488,7 @@ a {
 }
 
 .pagination-item-current li {
+	display: block;
 	width: 27px;
 	height: 26px;
 	color: #323232;
